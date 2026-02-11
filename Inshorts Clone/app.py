@@ -1,3 +1,5 @@
+ pip install --upgrade pip
+
 import streamlit as st
 from news_api import get_news
 
@@ -40,4 +42,5 @@ with col3:
 
 st.markdown("---")
 st.caption("Made by Wajid Iqbal")
+
 
