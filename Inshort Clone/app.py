@@ -40,3 +40,4 @@ with col3:
 
 st.markdown("---")
 st.caption("Made by Wajid Iqbal")
+
