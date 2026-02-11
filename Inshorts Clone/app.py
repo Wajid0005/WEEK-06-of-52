@@ -14,6 +14,9 @@ articles = get_news()
 if "index" not in st.session_state:
     st.session_state.index = 0
 
+if not articles:
+    st.error("No articles found. Check API key or try again later.")
+    st.stop()
 
 article = articles[st.session_state.index]
 
@@ -40,6 +43,7 @@ with col3:
 
 st.markdown("---")
 st.caption("Made by Wajid Iqbal")
+
 
 
 
